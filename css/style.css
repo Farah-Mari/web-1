@@ -2,97 +2,123 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Arial', sans-serif;
     background-color: #f6ede9;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.product-card {
+  }
+  
+  .product-card {
     display: flex;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 800px;
-}
-
-.image {
+    margin-bottom: 30px; 
+  }
+  
+  .image-container {
     flex: 1;
     background-color: #f1f1f1;
-}
-
-.image img {
+  }
+  
+  .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.details {
+  }
+  
+  .details {
     flex: 1;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.category {
+  }
+  
+  .category {
     color: #a1a1a1;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-.name {
-    font-family: montserrat;
-    font-size: 40px;
-    font-weight: 500 700;
+  }
+  
+  .name {
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    font-weight: 700;
     margin: 10px 0;
-}
-
-.description {
+  }
+  
+  .description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500 700;
     color: #777;
-    line-height: 1.5;
-    font-weight: 20 50;
-}
-
-.price {
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  
+  .price {
     display: flex;
     align-items: baseline;
     gap: 10px;
     margin: 20px 0;
-}
-
-.currentPrice {
-    font-family: montserrat;
+  }
+  
+  .currentPrice {
+    font-family: "Fraunces", serif;
     font-size: 35px;
     font-weight: bold;
     color: #2c6e49;
-}
-
-.originalPrice {
+  }
+  
+  .originalPrice {
     font-size: 18px;
     color: #c1c1c1;
     text-decoration: line-through;
-}
-
-.add-to-cart {
+  }
+  
+  .add-to-cart {
     background-color: #2c6e49;
     color: white;
-    padding: 20px 30px;
+    padding: 20px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.add-to-cart:hover {
+  }
+  
+  .add-to-cart i {
+    margin-right: 10px; 
+  }
+  
+  .add-to-cart:hover {
     background-color: #24573d;
-}
+  }
+  
+  .attribution {
+    font-size: 12px;
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  .attribution a {
+    color: #2c6e49;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .attribution a:hover {
+    text-decoration: underline;
+  }
